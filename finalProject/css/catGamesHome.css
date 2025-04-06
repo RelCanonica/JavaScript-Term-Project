@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&display=swap');
+
+body {
+    background-image:url(../media/cat-background.png);
+    background-repeat:repeat;
+    font-family: "Covered By Your Grace", cursive;
+}
+.cat{
+    position:absolute;
+
+}
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+    margin:3%;
+}
+.centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.center-cats{
+    display: flex;
+    justify-content: center;
+    flex-direction:row;
+    flex-wrap: wrap;
+}
+.play-button{
+    padding:10px;
+    border:1px solid black;
+    text-align:center;
+}
+a{
+    color:white;
+    text-decoration:none;
+}
+a:hover{
+    text-decoration:underline;
+}
+h1{
+    color:white;
+    font-size:4em;
+    text-align:center;
+    letter-spacing:.1em;
+}
+span{
+    font-size:2em;
+}
+nav{
+    list-style-type:none;
+    float:right;
+    color:white;
+    width:30%;
+    font-size:1.25em;
+}
+.instructions{
+    color:white;
+    font-size:1.5em;
+    margin-left:20%;
+    margin-right:20%;
+    font-family: Arial, Helvetica, sans-serif;
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+    padding:2%;
+}
+ul{
+    padding:0;
+}
+li{
+    display:inline;
+    margin-left:1%;
+    padding:1%;
+    padding-right:2%;
+    border-right:1px solid white;
+}
+button{
+    border:none;
+    background:none;
+    font-family: "Covered By Your Grace", cursive;
+    color:white;
+    font-size:1.25em;
+}
+button:hover{
+    text-decoration:underline;
+}
+
+@media (max-width: 800px){
+    li{
+        display:list-item;
+        list-style-type:none;
+        border:none;
+        text-decoration:underline;
+    }
+}
