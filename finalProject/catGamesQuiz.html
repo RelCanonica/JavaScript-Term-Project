@@ -10,97 +10,173 @@
     <nav class="menu">
         <ul>
             <li><a href="../finalProject/catGamesHome.html">Home</a></li>
-            <li><a href="../finalProject/catGamesConcentration.html">Catcentration</a></li>
+            <li><a href="../finalProject/catGamesExplore.html">Cat Explore</a></li>
             <li><a href="../finalProject/catGamesPuzzle.html">Purrzle</a></li>
             <li><a href="../finalProject/catGamesQuiz.html">Feline Facts Quiz</a></li>
             <li><a href="../finalProject/readme.txt">Read Me</a></li>
         </ul>
     </nav>
 <h1>Feline Facts Quiz</h1>
-<p class="instructions">Feline Facts is a quiz game. For each question, you select an answer. If you answer correctly, you earn 1 point. The goal is to earn as many points as possible, with the highest score being 10 points.<br>
+<p class="instructions">Feline Facts is a quiz game. For each question, you select an answer. If you answer correctly, you earn 1 point. The goal is to earn as many points as possible, with the highest score being 7 points.<br>
     <button type="button"  name="goBack" id="goBack" onclick="goBack()">-- Go Back --</button>
 </p>
+
+<p style="color:white; text-align:center;">Score: <input type="text" id="tries" value="0" style="width: 60px" readonly></p>
+
+<div class="slideshow-container">
+
+    <!-- Question Slides -->
+    <div class="mySlides fade">
+      <div style="width:30%; margin-left:auto; margin-right:auto;">
+      <div class="counter">Question 1 / 7</div>
+      <h2>How high up can cats jump?</h2>
+      <label for="jump"  style="margin-top:25px;" >Select an Answer: </label>
+    <select name="jump" id="jump" required>
+      <option value="">-- Select an answer --</option>
+      <option id="correct">Up to 2 times their height</option>
+      <option id="incorrect">Up to 6 times their height</option> <!-- correct -->
+      <option id="incorrect">Up to 10 times their height</option>
+      <option id="incorrect">Cats can't jump!</option>
+    </select>
+    <button class="points" type="submit" id="quest1">Submit Answer</button>
+    <p>Feedback:<br>
+        <textarea id="comments" rows="2" cols="50" readonly></textarea>
+      </p>
+</div>
+
+
+    </div>
+
+    <div class="mySlides fade">
+        <div style="width:30%; margin-left:auto; margin-right:auto;">
+          <div class="counter">Question 2 / 7</div>
+          <h2>How many toes do most cats have (front and back paws)?</h2>
+          <label for="toes" style="margin-top:25px;">Select an Answer: </label>
+          <select name="toes" id="toes" required>
+            <option value="">-- Select an answer --</option>
+            <option value="16">16</option>
+            <option value="18">18</option> <!-- correct -->
+            <option value="20">20</option> 
+            <option value="24">24</option>
+          </select>
+          <button class="points" type="submit" id="quest2">Submit Answer</button>
+          <p>Feedback:<br>
+              <textarea id="comments2" rows="2" cols="50" readonly></textarea>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div style="width:30%; margin-left:auto; margin-right:auto;">
+          <div class="counter">Question 3 / 7</div>
+          <h2>How long do most cats sleep per day?</h2>
+          <label for="sleep" style="margin-top:25px;">Select an Answer: </label>
+          <select name="sleep" id="sleep" required>
+            <option value="">-- Select an answer --</option>
+            <option value="4-6">4-6 hours</option>
+            <option value="6-9">6-9 hours</option>
+            <option value="10-12">10-12 hours</option> 
+            <option value="13-16">13-16 hours</option> <!-- correct -->
+          </select>
+          <button class="points" type="submit" id="quest3">Submit Answer</button>
+          <p>Feedback:<br>
+              <textarea id="comments3" rows="2" cols="50" readonly></textarea>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div style="width:30%; margin-left:auto; margin-right:auto;">
+          <div class="counter">Question 4 / 7</div>
+          <h2>How long did the oldest cat live?</h2>
+          <label for="old" style="margin-top:25px;">Select an Answer: </label>
+          <select name="old" id="old" required>
+            <option value="">-- Select an answer --</option>
+            <option value="20">20 years</option>
+            <option value="27">27 years</option>
+            <option value="30">30 years</option> 
+            <option value="38">38 years</option> <!-- correct -->
+          </select>
+          <button class="points" type="submit" id="quest4">Submit Answer</button>
+          <p>Feedback:<br>
+              <textarea id="comments4" rows="2" cols="50" readonly></textarea>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div style="width:30%; margin-left:auto; margin-right:auto;">
+          <div class="counter">Question 5 / 7</div>
+          <h2>True or False: Cats are carnivores</h2>
+          <label for="carnivore" style="margin-top:25px;">Select an Answer: </label>
+          <select name="carnivore" id="carnivore" required>
+            <option value="">-- Select an answer --</option>
+            <option value="truth">True</option> <!-- correct -->
+            <option value="false">False</option>
+          </select>
+          <button class="points" type="submit" id="quest5">Submit Answer</button>
+          <p>Feedback:<br>
+              <textarea id="comments5" rows="2" cols="50" readonly></textarea>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div style="width:30%; margin-left:auto; margin-right:auto;">
+          <div class="counter">Question 6 / 7</div>
+          <h2>Which of these cat facts is FALSE?</h2>
+          <label for="dairy" style="margin-top:25px;">Select an Answer: </label>
+          <select name="dairy" id="dairy" required>
+            <option value="">-- Select an answer --</option>
+            <option value="nose-ridge">The nose ridge of a cat is as unique as human fingerprints.</option>
+            <option value="salt">Cats can filter the salt out of seawater, so they won't get dehydrated when they drink it as a human would.</option>
+            <option value="sweat">Cats sweat through their paws.</option> 
+            <option value="milk">Cats can digest dairy just fine, including milk.</option> <!-- correct -->
+          </select>
+          <button class="points" type="submit" id="quest6">Submit Answer</button>
+          <p>Feedback:<br>
+              <textarea id="comments6" rows="2" cols="50" readonly></textarea>
+          </p>
+        </div>
+      </div>
+
+
+      <div class="mySlides fade">
+        <div style="width:30%; margin-left:auto; margin-right:auto;">
+          <div class="counter">Question 7 / 7</div>
+          <h2>What is the average lifespan of an indoor cat?</h2>
+          <label for="lifespan" style="margin-top:25px;">Select an Answer: </label>
+          <select name="lifespan" id="lifespan" required>
+            <option value="">-- Select an answer --</option>
+            <option value="5">5 years</option>
+            <option value="10">10 years</option>
+            <option value="15">15 years</option> <!-- correct -->
+            <option value="25">25 years</option>
+          </select>
+          <button class="points" type="submit" id="quest7">Submit Answer</button>
+          <p>Feedback:<br>
+              <textarea id="comments7" rows="2" cols="50" readonly></textarea>
+          </p>
+        </div>
+      </div>
+  
+
+  
+    <!-- Next and previous buttons -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094; Previous Question</a>
+    <a class="next" onclick="plusSlides(1)">Next Question &#10095;</a>
+  </div>
+  <br>
+
+
 <article>
-<div class="slider">
-           
-    <div class="slide-viewer">
-      <div class="slide-group">
-
-<div class="slide slide-1">
-<h2>How high up can cats jump?</h2>
-
-<ul>
-    <li class="quiz-option">Up to 2 times their height</li>
-    <li class="quiz-option">Up to 6 times their height</li>
-    <li class="quiz-option">Up to 10 times their height</li>
-    <li class="quiz-option">Cats can't jump!</li>
-</ul>
-</div>
-
-<div class="slide slide-2">
-<h2>How many toes do most cats have (front and back paws)?</h2>
-<ul>
-    <li class="quiz-option">16</li>
-    <li class="quiz-option">18</li>
-    <li class="quiz-option">20</li>
-    <li class="quiz-option">24</li>
-</ul>
-</div>
-
-<div class="slide slide-3">
-<h2>How long do most cats sleep per day?</h2>
-<ul>
-    <li class="quiz-option">4-6 hours</li>
-    <li class="quiz-option">6-9 hours</li>
-    <li class="quiz-option">10-12 hours</li>
-    <li class="quiz-option">13-16 hours</li>
-</ul>
-</div>
-
-<div class="slide slide-4">
-<h2>How long did the oldest cat live?</h2>
-<ul>
-    <li class="quiz-option">20 years</li>
-    <li class="quiz-option">27 years</li>
-    <li class="quiz-option">30 years</li>
-    <li class="quiz-option">38 years</li>
-</ul>
-</div>
 
 
-<div class="slide slide-5">
-<h2>True or False: Cats are carnivores</h2>
-<ul>
-    <li class="quiz-option">True</li>
-    <li class="quiz-option">False</li>
-</ul>
-</div>
 
-<div class="slide slide-6">
-<h2>True or False: Cats are nocturnal</h2>
-<ul>
-    <li class="quiz-option">True</li>
-    <li class="quiz-option">False</li>
-</ul>
-</div>
-
-<div class="slide slide-7">
-<h2>Which of these cat facts is FALSE?</h2>
-<ul>
-    <li class="quiz-option">The nose ridge of a cat is as unique as human fingerprints.</li>
-    <li class="quiz-option">Cats can filter the salt out of seawater, so they won't get dehydrated when they drink it as a human would.</li>
-    <li class="quiz-option">Cats sweat through their paws.</li>
-    <li class="quiz-option">Cats can digest dairy just fine, including milk.</li>
-</ul>
-</div>
-
-</div>
-
-</div>
-<div class="slide-buttons"></div>
-</div>
-
-</article>
 <script src="../finalProject/js/catGamesQuiz.js"></script>
 <script src="../finalProject/js/catGamesHome.js"></script>
 

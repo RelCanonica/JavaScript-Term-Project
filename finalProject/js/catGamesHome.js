@@ -1,9 +1,9 @@
 document.getElementById("concentration").addEventListener("mouseover",function(){
-    document.getElementById("message").innerHTML="Flip over cards to make matches<br><br> --PLAY--";
+    document.getElementById("message").innerHTML="Jump through living room shelves<br><br> --PLAY--";
 })
 
 document.getElementById("concentration").addEventListener("mouseout",function(){
-    document.getElementById("message").innerHTML="Game 1: Catcentration";
+    document.getElementById("message").innerHTML="Game 1: Cat Explore";
 })
 
 document.getElementById("puzzle").addEventListener("mouseover",function(){

@@ -1,0 +1,83 @@
+canvas {
+    border:1px solid #d3d3d3;
+    background-image: url("../media/living-room.png");
+    position:absolute;
+    top:40%;
+    left:30%;
+}
+.gamepad{
+    position:absolute;
+    top:55%;
+    left:20%;
+    width:200px;
+    text-align:center;
+}
+
+.game-buttons{
+    background:white;
+    color:#666;
+}
+
+.game-buttons:active{
+    background:gray;
+    color:orange;
+}
+
+.restart{
+    position:absolute;
+    top:45%;
+    left:23%;
+}
+ 
+ .page {
+    max-width: 640px;
+    margin: 0 auto 30px auto;}
+  
+  .panel {
+    background-color: #fff;
+    color: #666;
+    border: 2px dashed gray;
+    overflow: auto;}
+  
+  button {
+    font-size: 90%;
+    text-align: left;
+    text-transform: uppercase;
+  }
+  .icon-bar {
+    overflow: auto; 
+  }
+  .icon-bar a {
+   float: left; /* Float links side by side */
+   width:10%;
+   text-align: center; /* Center-align text */
+   margin-right:1%;
+   transition: all 0.3s ease; /* Add transition for hover effects */
+   color: white; /* White text color */
+   font-size: 36px; /* Increased font size */
+   background:white;
+   color:black;
+   border-radius:20px;  
+  }
+  .icon-bar a:hover {
+   color:orange; /* Add a hover color */
+  }
+  section{
+   width:50%;
+  }
+
+  .quiz-option {
+    display:block;
+    color:white;
+    list-style-type: square;
+  }
+  
+  
+  .center{
+    margin-left:auto;
+    margin-right:auto;
+    width:80%;
+    text-align:center;
+  }
+  
+ 
